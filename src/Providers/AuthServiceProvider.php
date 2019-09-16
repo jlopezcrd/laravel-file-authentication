@@ -1,6 +1,6 @@
 <?php
 
-namespace Developez\Providers;
+namespace Developez\LaraFileAuth\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Guard;
@@ -34,7 +34,7 @@ class AuthServiceProvider extends ServiceProvider
             {
                 case 'json':
                     return new AuthFileProvider(
-                        $app->make('Developez\LaraFileAuth\JsonStorageEngine'),
+                        $app->make('Developez\LaraFileAuth\Engine\JsonStorageEngine'),
                         $app['hash'],
                         config('auth.providers.custom.model', Cryptavel\User::class)
                     );
@@ -42,7 +42,7 @@ class AuthServiceProvider extends ServiceProvider
 
                 default:
                     return new AuthFileProvider(
-                        $app->make('Developez\LaraFileAuth\ArrayStorageEngine'),
+                        $app->make('Developez\LaraFileAuth\Engine\ArrayStorageEngine'),
                         $app['hash'],
                         config('auth.providers.custom.model', Cryptavel\User::class)
                     );

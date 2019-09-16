@@ -1,6 +1,6 @@
 <?php
 
-namespace Developez\LaraFileAuth;
+namespace Developez\LaraFileAuth\Contracts;
 
 interface StorageEngineContract
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Developez\LaraFileAuth;
+namespace Developez\LaraFileAuth\Engine;
 
-use Developez\LaraFileAuth\StorageEngineContract;
+use Developez\LaraFileAuth\Contracts\StorageEngineContract;
 
 class JsonStorageEngine implements StorageEngineContract
 {

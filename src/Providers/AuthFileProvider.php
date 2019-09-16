@@ -1,6 +1,6 @@
 <?php
 
-namespace Developez\LaraFileAuth;
+namespace Developez\LaraFileAuth\Providers;
 
 use Illuminate\Contracts\Auth\UserProvider;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -10,8 +10,8 @@ use Illuminate\Auth\GenericUser;
 use Illuminate\Hashing\HashManager;
 use Illuminate\Contracts\Eloquent;
 
-use Developez\LaraFileAuth\StorageEngineContract;
-use Developez\LaraFileAuth\UserFile;
+use Developez\LaraFileAuth\Contracts\StorageEngineContract;
+use Developez\LaraFileAuth\Models\UserFile;
 
 class AuthFileProvider implements UserProvider
 {
