@@ -1,0 +1,27 @@
+{
+    "name": "jlopezcrd/laravel-file-authentication",
+    "description": "Package for Auth in laravel from file",
+    "keywords": ["laravel", "auth", "authentication", "file"],
+    "homepage": "https://github.com/jlopezcrd/laravel-file-authentication",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jorge López",
+            "email": "hola+github@developez.org",
+            "homepage": "https://tu.arquitecto.cloud",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "5.8.*"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Developez\\LaraFileAuth\\": ["src"]
+        }
+    }
+}
